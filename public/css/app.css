@@ -1,0 +1,113 @@
+/* TravelDiary - Custom Styles (Stage 5: CSS Improvement) */
+
+:root {
+    --td-primary: #2f3e35;
+    --td-primary-light: #4a6350;
+    --td-accent: #d97b3f;
+    --td-bg: #f7f6f2;
+    --td-text: #2f2f2f;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--td-bg);
+    color: var(--td-text);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--td-primary) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--td-text) !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--td-primary-light) !important;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, var(--td-primary), var(--td-primary-light));
+}
+
+.hero-section .btn-light:hover {
+    background-color: var(--td-accent);
+    border-color: var(--td-accent);
+    color: #fff;
+}
+
+/* Travel Cards */
+.travel-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.travel-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.travel-card .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.travel-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn-success {
+    background-color: var(--td-primary);
+    border-color: var(--td-primary);
+}
+
+.btn-success:hover {
+    background-color: var(--td-primary-light);
+    border-color: var(--td-primary-light);
+}
+
+.btn-outline-success {
+    color: var(--td-primary);
+    border-color: var(--td-primary);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--td-primary);
+    border-color: var(--td-primary);
+    color: #fff;
+}
+
+/* Detail page story card */
+.story-card {
+    border-radius: 0.75rem;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--td-primary);
+    color: var(--td-bg);
+}
+
+/* Section headings */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--td-accent);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
